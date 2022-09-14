@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Formulario de Registro</h1>
+    <form method="post" action="/a/recibe.html">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="">Nombre</label>
+                <input type="text" name="txtNombre">
+            <br><br>
+            <label for="" >Apellido</label>
+                <input type="text" name="txtApellido">
+            <br><br>
+            <label for="">Mi Foto</label>
+                <input type="file" name="txtArchivo">
+            <br><br>
+            <label for="">Mi Perfil</label> <br>
+                <textarea name="txtPerfil" cols="30" rows="3">Diligencie su presentación personal</textarea> <br>
+            <label for="">Genero</label>
+                <input type="radio" name="txtGenero" value="mas">Masculino
+                <input type="radio" name="txtGenero" value="fem">Femenino
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Datos de Interes</legend>
+            <label for="">Formación de Interés</label>
+            <br>
+                <input type="checkbox" name="txtBD">Base de Datos
+                <input type="checkbox" name="txtMo">Movil
+                <input type="checkbox" name="txtSO">Sistemas Operativos <br>
+                <input type="checkbox" name="txtFe">Front end
+                <input type="checkbox" name="txtBe">Back end
+            <br><br>
+            <label for="">Ciudad Preferida</label> <br>
+            <select name="txtCiudad" size="4" >
+                <option value="">Seleccione la ciudad...</option>
+                <option value="Med">Medellín</option>
+                <option value="Cal">Caldas</option>
+                <option value="Bar">Barranquilla</option>
+                <option value="Sma">Santa Marta</option>
+                <option value="Car">Cartagena</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Datos de Acceso</legend>
+            <label for="">Correo</label>
+                <input type="email" name="txtCorreo"> <br><br>
+            <label for="">Contraseña</label>
+                <input type="password" name="txtClave"><br><br>
+            <label for="">Confirmar Contraseña</label>
+                <input type="password" name="txtConf">    
+        </fieldset><br>
+        <input type="submit" name="Enviar">
+        <button type="button" onclick="alert('Bienvenido a mi Página!')">Saludar</button>
+    </form>
+    
+    </body>
+</html>
